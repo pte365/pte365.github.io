@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('images/Lake\ Diefenbaker\ Expanse.webp');
     background-size: cover; /* CRITICAL: Scales image to cover entire container */
@@ -13,9 +17,7 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-.spacer {
-    height: 20vh; /* Adjust this number to move the title up or down */
-}
+
 .content-container {
     padding: 20px; /* Adds a little space from the screen edge */
     width: 100%; /* Ensures the container uses the full width */

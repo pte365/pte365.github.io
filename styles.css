@@ -4,6 +4,12 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image from tiling */
     background-attachment: fixed; /* Keeps image fixed during scrolling (optional) */
+    display: flex;
+    flex-direction: column;  /* Keeps elements stacked vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center;     /* Centers items horizontally */
+    min-height: 100vh;       /* Makes the body at least as tall as the screen */
+    margin: 0;               /* Removes default browser spacing */
     /* Add padding/margin resets and min-height if body doesn't cover the whole screen */
     min-height: 100vh;
     margin: 0;
@@ -18,9 +24,16 @@ body {
 
 h1 {
     color: white; /* Sets the text color to white*/
-    font-size: 5rem; /* Makes the title very large; 'rem' scales well with screen size */
+    /* clamp(MIN, PREFERRED, MAX) */
+    font-size: clamp(1.5rem, 15vw, 3rem);
+    line-height: 1.2;
+    word-wrap: break-word; /* Safety net: lets the word break if it's still too long */
     margin: 0; /* Removes default margin from the H1 tag */
-    text-align: left; /* Ensures the text is left-aligned*/
+    text-align: center;      /* Centers the text horizontally */
+    margin-left: auto;       /* Ensures equal spacing on the left */
+    margin-right: auto;      /* Ensures equal spacing on the right */
+    width: 90%;              /* Gives it a little "breathing room" on the edges */
+    max-width: 800px;        /* Prevents it from getting too wide on a monitor */
     /* Optional: Add a subtle text shadow for better readability over busy backgrounds */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }

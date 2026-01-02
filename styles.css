@@ -8,3 +8,19 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+
+.content-container {
+    padding: 20px; /* Adds a little space from the screen edge */
+    width: 100%; /* Ensures the container uses the full width */
+    max-width: 1200px; /* Optional: prevents text from getting too wide on huge screens */
+    margin-left: 5%; /* Shifts content slightly from the absolute left edge */
+}
+
+h1 {
+    color: white; /* Sets the text color to white*/
+    font-size: 5rem; /* Makes the title very large; 'rem' scales well with screen size */
+    margin: 0; /* Removes default margin from the H1 tag */
+    text-align: left; /* Ensures the text is left-aligned*/
+    /* Optional: Add a subtle text shadow for better readability over busy backgrounds */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,10 @@
+body {
+    background-image: url('images/Lake\ Diefenbaker\ Expanse.webp');
+    background-size: cover; /* CRITICAL: Scales image to cover entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image from tiling */
+    background-attachment: fixed; /* Keeps image fixed during scrolling (optional) */
+    /* Add padding/margin resets and min-height if body doesn't cover the whole screen */
+    min-height: 100vh;
+    margin: 0;
+}

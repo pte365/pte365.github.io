@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('images/Lake\ Diefenbaker\ Expanse.webp');
     background-size: cover; /* CRITICAL: Scales image to cover entire container */

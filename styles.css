@@ -37,6 +37,11 @@ body {
     
     /* The 1px border between the white and the background */
     border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
 }
 
 /* 3. THE LINKS (Horizontal) */

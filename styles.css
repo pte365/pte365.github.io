@@ -118,3 +118,66 @@ h1 {
 .social-footer .fa-facebook:hover {
     color: #4267B2;
 }
+
+/* 5. GRID SYSTEM */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    margin-top: 40px;
+    padding-bottom: 100px; /* Space for the footer */
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Darkens the image slightly so text stands out */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.card:hover::before {
+    background: rgba(0, 0, 0, 0.1); /* Brightens on hover */
+}
+
+.card-title {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive: 1 column on mobile, 2 on tablets */
+@media (max-width: 900px) {
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .card-grid { grid-template-columns: 1fr; }
+}

@@ -82,3 +82,34 @@ h1 {
     max-width: 800px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+/* 1. SOCIAL FOOTER CONTAINER */
+.social-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px; /* Space between the two icons */
+    z-index: 2000; /* Ensures they stay above your background and content */
+}
+
+/* 2. ICON STYLES */
+.social-footer a {
+    text-decoration: none;
+    color: white; /* White icons look great against lake backgrounds */
+    font-size: 2rem; /* Makes them easy to tap on mobile */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Helps visibility against light images */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* 3. HOVER EFFECTS */
+.social-footer a:hover {
+    transform: scale(1.1); /* Subtle "pop" when hovered */
+}
+
+.social-footer .fa-instagram:hover {
+    color: #E1306C;
+}
+
+.social-footer .fa-facebook:hover {
+    color: #4267B2;
+}

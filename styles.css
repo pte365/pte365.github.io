@@ -135,7 +135,9 @@ h1 {
 
 .card {
     position: relative;
-    height: 200px;
+    width: 100%;             /* Fills its 1/3 of the grid */
+    aspect-ratio: 3 / 1;     /* High-width, low-height rectangle */
+    min-height: 120px;       /* Prevents it from getting too squashed on mobile */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
     background-size: cover;

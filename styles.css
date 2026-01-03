@@ -99,7 +99,10 @@ h1 {
     margin-right: auto;
     width: 90%;
     max-width: 800px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
+    
+    /* Slightly softened shadow to let the outline pop */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 /* 1. SOCIAL FOOTER CONTAINER */
 .social-footer {

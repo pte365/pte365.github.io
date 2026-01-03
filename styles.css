@@ -87,10 +87,10 @@ h1 {
 /* The Menu (Hidden by default) */
 .nav-links {
     position: absolute;
-    top: 150px;
+    top: 30vh;
     left: -100%; /* Hidden off-screen to the left */
     width: 150px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 30vh);
     
     background-color: rgba(255, 255, 255, 0);
     

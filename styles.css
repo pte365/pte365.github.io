@@ -205,3 +205,52 @@ h1 {
         aspect-ratio: 2.5 / 1; /* Make cards slightly taller on mobile for easier tapping */
     }
 }
+
+/* 7. ABOUT PAGE TEXT BOX */
+.text-box {
+    /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0.85); 
+    
+    /* The "Glass" effect - blurs the background image behind the box */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Professional constraints */
+    max-width: 800px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-box p {
+    color: #333;
+    font-size: 1.15rem;
+    line-height: 1.8; /* Increased line height for readability */
+    margin-bottom: 20px;
+    font-family: sans-serif; /* Or your preferred clean font */
+    text-align: left;
+}
+
+/* Remove margin from last paragraph */
+.text-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .text-box {
+        padding: 25px;
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    .text-box p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+}

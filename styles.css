@@ -22,6 +22,19 @@ body {
     min-height: 100vh;
 }
 
+/* Ensure the title link looks exactly like the H1 text */
+.title-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Inherits the white color from the H1 */
+    display: inline-block; /* Helps with click area and transitions */
+    transition: opacity 0.3s ease;
+}
+
+/* Optional: subtle fade when you hover over the title to show it's clickable */
+.title-link:hover {
+    opacity: 0.8;
+}
+
 /* 2. THE NAVBAR (White Banner) */
 .navbar {
     width: 100%;
@@ -209,7 +222,7 @@ h1 {
 /* 7. ABOUT PAGE TEXT BOX */
 .text-box {
     /* Semi-transparent white */
-    background: rgba(255, 255, 255, 0.85); 
+    background: rgba(255, 255, 255, 0.5); 
     
     /* The "Glass" effect - blurs the background image behind the box */
     backdrop-filter: blur(10px);
@@ -223,8 +236,9 @@ h1 {
     
     /* Professional constraints */
     max-width: 800px; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+     /* Subtle border adds to the 'glass' look */
     border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .text-box p {
